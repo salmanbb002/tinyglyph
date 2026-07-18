@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f0e7"/>
+  <path d="M0 515C237 430 338 584 604 504c238-72 356-32 596 49v77H0z" fill="#dbe6d4"/>
+  <circle cx="1027" cy="128" r="180" fill="#ff6947" opacity=".14"/>
+  <rect x="76" y="68" width="96" height="96" rx="24" fill="#182421"/>
+  <text x="96" y="142" fill="#f4f0e7" font-family="serif" font-size="70" font-weight="700">T</text>
+  <text x="137" y="146" fill="#ff6947" font-family="sans-serif" font-size="32" font-weight="700">t</text>
+  <text x="76" y="265" fill="#182421" font-family="serif" font-size="80" font-weight="700">Make every word</text>
+  <text x="76" y="350" fill="#182421" font-family="serif" font-size="80" font-style="italic">a little different.</text>
+  <text x="80" y="422" fill="#56615e" font-family="sans-serif" font-size="30">22 instant, copy-ready Unicode text styles.</text>
+  <rect x="80" y="480" width="282" height="68" rx="34" fill="#182421"/>
+  <text x="124" y="525" fill="#fff" font-family="sans-serif" font-size="25" font-weight="700">tinyglyph</text>
+  <text x="260" y="523" fill="#ff8d70" font-family="sans-serif" font-size="24">ᵗⁱⁿʸᵍˡʸᵖʰ</text>
+</svg>
