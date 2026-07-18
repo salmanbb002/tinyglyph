@@ -9,7 +9,7 @@ A production-ready small-text generator built with Next.js. It converts normal t
 - Dedicated SEO pages for ten high-intent text tools
 - Structured data, Open Graph artwork, sitemap, robots rules, web app manifest, and security headers
 - Optional server-side Hugging Face inference using `Qwen/Qwen3-0.6B` by default
-- Responsive editorial design with reduced-motion and keyboard support
+- Responsive tool-workspace design with reduced-motion and keyboard support
 - Unit tests and a GitHub Actions quality workflow
 
 ## Run locally
@@ -61,4 +61,4 @@ Before deploying, set `NEXT_PUBLIC_SITE_URL` to the canonical domain, set `NEXT_
 
 ## Design direction
 
-TinyGlyph uses an editorial typesetter-workbench aesthetic: warm paper, ink panels, coral proofreader marks, and physical specimen cards. Its visual anchor is the taped type specimen in the hero. The direction scored **13/15** on the design feasibility and impact index: high context fit and memorability with low runtime cost.
+TinyGlyph uses a **Precision Utility Desk** direction: a live readiness bar, persistent focused-tool rail, numbered conversion workflow, dense comparison canvas, and explicit local/privacy status. Warm editorial type gives the utility character without pushing the converter below a marketing hero. The direction scored **13/15** on the design feasibility and impact index: high context fit and memorability with low runtime cost.

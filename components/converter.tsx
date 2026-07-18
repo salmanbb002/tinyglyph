@@ -7,10 +7,12 @@ import {
   Dices,
   Heart,
   Search,
+  ShieldCheck,
   Sparkles,
   WandSparkles,
   X,
 } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { StyleCategory, textStyles } from "@/lib/fonts";
 
@@ -29,6 +31,17 @@ const categories: Array<"All" | StyleCategory | "Saved"> = [
   "Playful",
   "Saved",
 ];
+
+const quickTools = [
+  ["Small caps", "ᴛᴛ", "small-caps"],
+  ["Superscript", "ᵀᵗ", "superscript"],
+  ["Subscript", "Tₜ", "subscript"],
+  ["Bold text", "𝐓𝐭", "bold"],
+  ["Cursive", "𝒯𝓉", "cursive"],
+  ["Bubble text", "Ⓣⓣ", "bubble"],
+  ["Underline", "T̲t̲", "underline"],
+  ["Upside down", "ʇ⊥", "upside-down"],
+] as const;
 
 type ConverterProps = {
   initialStyle?: string;
@@ -152,23 +165,52 @@ export function Converter({ initialStyle, title, description }: ConverterProps) 
   }
 
   return (
-    <section className="generator" id="generator" aria-labelledby="generator-title">
+    <section className="generator tool-workspace" id="generator" aria-label="Unicode converter workspace">
+      <div className="workspace-bar">
+        <span><span className="live-dot" /> Generator ready</span>
+        <div><span>22 styles</span><span>Local conversion</span><span>No sign-up</span></div>
+      </div>
+
+      <div className="workspace-grid">
+        <aside className="tool-rail" aria-label="Text generator tools">
+          <div className="rail-heading">
+            <span>Text tools</span>
+            <small>Choose a focused mode</small>
+          </div>
+          <Link className={!initialStyle ? "active" : ""} href="/#generator">
+            <span className="rail-glyph">Aa</span>
+            <span><b>All styles</b><small>Compare every output</small></span>
+          </Link>
+          {quickTools.map(([label, glyph, slug]) => (
+            <Link className={initialStyle === slug ? "active" : ""} href={`/tools/${slug}`} key={slug}>
+              <span className="rail-glyph">{glyph}</span>
+              <span><b>{label}</b><small>Open focused tool</small></span>
+            </Link>
+          ))}
+          <div className="rail-privacy">
+            <ShieldCheck size={18} aria-hidden="true" />
+            <div><b>Private by design</b><span>Your converter text never leaves this browser.</span></div>
+          </div>
+        </aside>
+
+        <div className="workspace-canvas">
       <div className="generator-heading">
         <div>
-          <span className="eyebrow"><Sparkles size={15} aria-hidden="true" /> Live Unicode studio</span>
-          <h2 id="generator-title">{title ?? "Type once. Try every style."}</h2>
+          <span className="eyebrow"><Sparkles size={15} aria-hidden="true" /> Unicode conversion workspace</span>
+          <h2 id="generator-title">{title ?? "Convert your text"}</h2>
         </div>
-        <p>{description ?? "Every result updates as you type. No uploads, no account, no waiting."}</p>
+        <p>{description ?? "Type once, compare every style, then copy the result you want."}</p>
       </div>
 
       <div className="input-card">
         <div className="input-toolbar">
-          <label htmlFor="text-input">Your text</label>
+          <label htmlFor="text-input"><span>1</span> Enter your text</label>
           <span className="character-count">{text.length.toLocaleString()} / 2,000</span>
         </div>
         <div className="textarea-wrap">
           <textarea
             id="text-input"
+            aria-label="Your text"
             ref={textareaRef}
             value={text}
             maxLength={2000}
@@ -246,7 +288,7 @@ export function Converter({ initialStyle, title, description }: ConverterProps) 
       </div>
 
       <div className="results-summary" aria-live="polite">
-        <span>{filteredStyles.length} styles</span>
+        <span><b>2</b> Choose an output · {filteredStyles.length} styles</span>
         <span>Tap any result to copy</span>
       </div>
 
@@ -308,6 +350,8 @@ export function Converter({ initialStyle, title, description }: ConverterProps) 
       <p className="copy-announcement sr-only" aria-live="polite">
         {copied ? `${textStyles.find((style) => style.slug === copied)?.name} copied to clipboard.` : ""}
       </p>
+        </div>
+      </div>
     </section>
   );
 }
