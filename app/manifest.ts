@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Instant, copy-ready Unicode text styles.",
     start_url: "/",
     display: "standalone",
-    background_color: "#f4f0e7",
-    theme_color: "#182421",
+    background_color: "#f6f7f9",
+    theme_color: "#2563eb",
     icons: [{ src: "/favicon.svg", sizes: "any", type: "image/svg+xml" }],
   };
 }
