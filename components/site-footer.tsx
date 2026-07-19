@@ -25,7 +25,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} TinyGlyph</span>
+        <span>© {new Date().getFullYear()} SmallTextGen</span>
         <span>Built for copy, paste, and play.</span>
       </div>
     </footer>

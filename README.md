@@ -1,4 +1,4 @@
-# TinyGlyph
+# SmallTextGen
 
 A production-ready small-text generator built with Next.js. It converts normal text into 22 copy-ready Unicode styles in the browser and includes an optional Hugging Face caption starter.
 
@@ -63,4 +63,4 @@ Before deploying, set `NEXT_PUBLIC_SITE_URL` to the canonical domain, set `NEXT_
 
 ## Design direction
 
-TinyGlyph uses a **Clear Type Utility** direction: a quiet gray canvas, white working surfaces, one restrained cobalt action color, a persistent focused-tool rail, and a numbered conversion workflow. Its visual anchor is the live converter itself—style navigation beside a dense, immediately copyable result canvas. Newsreader gives generated text and headings character while Manrope keeps controls precise. The direction scored **13/15** on the design feasibility and impact index: excellent context fit, maintainability, and performance safety.
+SmallTextGen uses a **Clear Type Utility** direction: a quiet gray canvas, white working surfaces, one restrained cobalt action color, a persistent focused-tool rail, and a numbered conversion workflow. Its visual anchor is the live converter itself—style navigation beside a dense, immediately copyable result canvas. Newsreader gives generated text and headings character while Manrope keeps controls precise. The direction scored **13/15** on the design feasibility and impact index: excellent context fit, maintainability, and performance safety.

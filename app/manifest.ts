@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "TinyGlyph Small Text Generator",
-    short_name: "TinyGlyph",
+    name: "SmallTextGen — Small Text Generator",
+    short_name: "SmallTextGen",
     description: "Instant, copy-ready Unicode text styles.",
     start_url: "/",
     display: "standalone",

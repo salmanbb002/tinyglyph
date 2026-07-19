@@ -135,36 +135,20 @@ button {
 }
 
 .brand-mark {
-  position: relative;
   width: 38px;
   height: 38px;
-  display: grid;
-  place-items: center;
-  color: white;
-  background: var(--ink);
-  border-radius: 10px;
-  font-family: var(--display);
-  font-size: 26px;
-  font-weight: 650;
-  line-height: 1;
-  transform: rotate(-3deg);
-}
-
-.brand-mark small {
-  position: absolute;
-  right: 6px;
-  bottom: 5px;
-  color: var(--coral);
-  font-family: var(--body);
-  font-size: 10px;
-  font-weight: 800;
+  display: block;
+  flex: 0 0 auto;
 }
 
 .brand-name {
+  display: inline-flex;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: -0.04em;
 }
+
+.brand-name span { color: var(--coral-dark); }
 
 .desktop-nav {
   display: flex;
@@ -1419,7 +1403,8 @@ button {
   background: var(--ink);
 }
 
-.site-footer .brand-mark { color: var(--ink); background: var(--paper-light); }
+.site-footer .brand-mark { background: transparent; }
+.site-footer .brand-name span { color: var(--brand-on-dark); }
 
 .footer-main {
   padding-bottom: 65px;
@@ -1778,6 +1763,7 @@ button {
   --muted: #5f697a;
   --coral: #2563eb;
   --coral-dark: #1d4ed8;
+  --brand-on-dark: #a9c2ff;
   --sage: #f1f4f8;
   --sage-deep: #e4e9f0;
   --line: rgba(29, 39, 51, 0.13);
@@ -1794,7 +1780,7 @@ body::before { display: none; }
   backdrop-filter: blur(16px);
 }
 
-.site-header .brand-mark { color: white; background: var(--coral); border-radius: 8px; transform: none; }
+.site-header .brand-mark { background: transparent; }
 .site-header .desktop-nav > a:not(.nav-accent)::after { background: var(--coral); }
 .site-header .nav-accent { color: white; background: var(--coral); border-radius: 8px; }
 .site-header .nav-accent:hover { color: white; background: var(--coral-dark); }

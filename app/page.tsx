@@ -21,19 +21,19 @@ import { getSiteUrl } from "@/lib/site-url";
 const faq = [
   [
     "Is this a font generator?",
-    "Not exactly. TinyGlyph replaces regular letters with visually similar Unicode characters. That is why most results can be copied and pasted without installing a font.",
+    "Not exactly. SmallTextGen replaces regular letters with visually similar Unicode characters. That is why most results can be copied and pasted without installing a font.",
   ],
   [
     "Where can I use small text?",
     "Try it in social bios, captions, display names, chats, notes, and headings. Support varies because each app decides which Unicode characters it accepts.",
   ],
   [
-    "Does TinyGlyph upload my text?",
+    "Does SmallTextGen upload my text?",
     "No. The text converters run entirely in your browser. Only the optional AI caption starter sends the topic you enter to the server for generation.",
   ],
   [
     "Why are some superscript or subscript letters unchanged?",
-    "Unicode does not include a perfect raised or lowered version of every Latin letter. TinyGlyph keeps unsupported letters readable instead of substituting misleading symbols.",
+    "Unicode does not include a perfect raised or lowered version of every Latin letter. SmallTextGen keeps unsupported letters readable instead of substituting misleading symbols.",
   ],
   [
     "Will every style work on every app?",
@@ -60,7 +60,7 @@ export default function Home() {
     "@graph": [
       {
         "@type": "WebApplication",
-        name: "TinyGlyph Small Text Generator",
+        name: "SmallTextGen Small Text Generator",
         url: siteUrl,
         applicationCategory: "UtilitiesApplication",
         operatingSystem: "Any",
@@ -211,7 +211,7 @@ export default function Home() {
           <span className="section-index">About the tool</span>
           <h2 id="unicode-title">What is a small text generator?</h2>
           <p>A small text generator replaces ordinary Latin letters with visually similar Unicode characters. The result looks like a different font, but it remains selectable text you can copy and paste.</p>
-          <p>TinyGlyph generates small caps, raised superscript, lowered subscript, mathematical alphabets, circled characters, and decorated styles without asking you to install anything.</p>
+          <p>SmallTextGen generates small caps, raised superscript, lowered subscript, mathematical alphabets, circled characters, and decorated styles without asking you to install anything.</p>
           <Link href="/about">Read how Unicode conversion works <ArrowRight size={16} aria-hidden="true" /></Link>
         </article>
         <aside>
