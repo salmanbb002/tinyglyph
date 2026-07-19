@@ -2,6 +2,8 @@
 
 A production-ready small-text generator built with Next.js. It converts normal text into 22 copy-ready Unicode styles in the browser and includes an optional Hugging Face caption starter.
 
+Live site: [smalltextgen.site](https://smalltextgen.site)
+
 ## What is included
 
 - Live small caps, superscript, subscript, bold, cursive, bubble, glitch, and other Unicode transformations

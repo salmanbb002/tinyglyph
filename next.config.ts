@@ -6,6 +6,16 @@ const nextConfig: NextConfig = {
   allowedDevOrigins: ["127.0.0.1"],
   outputFileTracingRoot: process.cwd(),
   turbopack: { root: process.cwd() },
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.smalltextgen.site" }],
+        destination: "https://smalltextgen.site/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
