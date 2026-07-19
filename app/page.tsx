@@ -3,12 +3,16 @@ import {
   ArrowRight,
   Check,
   Copy,
+  Filter,
   Gauge,
   Globe2,
+  Heart,
+  Layers3,
   LockKeyhole,
   MousePointerClick,
   ShieldCheck,
   Sparkles,
+  WandSparkles,
   Zap,
 } from "lucide-react";
 import { Converter } from "@/components/converter";
@@ -81,17 +85,20 @@ export default function Home() {
       <section className="utility-hero">
         <div className="utility-hero-copy">
           <div className="breadcrumbs" aria-label="Breadcrumb">Home <span>/</span> Text tools <span>/</span> Small text generator</div>
-          <span className="eyebrow"><span className="status-dot" /> Browser tool · ready to use</span>
-          <h1>Small Text Generator</h1>
+          <span className="eyebrow"><span className="status-dot" /> Text engine / online</span>
+          <h1><span>Small Text</span><span>Generator</span></h1>
           <p>Convert normal text into small caps, superscript, subscript, cursive, bubble letters, and more copy-and-paste Unicode styles.</p>
+          <div className="hero-commandline" aria-label="Conversion workflow">
+            <span>Input</span><ArrowRight aria-hidden="true" /><span>Transform</span><ArrowRight aria-hidden="true" /><strong>Copy</strong>
+          </div>
           <div className="utility-badges">
-            <span><Zap size={15} aria-hidden="true" /> Instant results</span>
-            <span><LockKeyhole size={15} aria-hidden="true" /> Runs locally</span>
-            <span><Check size={15} aria-hidden="true" /> Free to use</span>
+            <span><Zap size={15} aria-hidden="true" /> 22 live outputs</span>
+            <span><LockKeyhole size={15} aria-hidden="true" /> Zero text uploads</span>
+            <span><Check size={15} aria-hidden="true" /> Unlimited use</span>
           </div>
         </div>
         <div className="tool-profile" aria-label="Tool capabilities">
-          <div className="tool-profile-head"><span>Tool profile</span><b>STG / 01</b></div>
+          <div className="tool-profile-head"><span>Capability scan</span><b>STG // 01</b></div>
           <div className="profile-metric"><strong>22</strong><span>Unicode styles<br />in one workspace</span></div>
           <div className="profile-grid">
             <span><b>0</b> uploads</span>
@@ -104,11 +111,60 @@ export default function Home() {
 
       <Converter />
 
-      <section className="tool-benefits" aria-label="Tool benefits">
-        <article><Zap aria-hidden="true" /><div><b>Instant conversion</b><span>Every output updates while you type.</span></div></article>
-        <article><Globe2 aria-hidden="true" /><div><b>Copy almost anywhere</b><span>Use real Unicode text across modern apps.</span></div></article>
-        <article><ShieldCheck aria-hidden="true" /><div><b>Private by default</b><span>Regular conversion happens in your browser.</span></div></article>
-        <article><Gauge aria-hidden="true" /><div><b>No usage limits</b><span>No account, queue, or daily allowance.</span></div></article>
+      <section className="feature-command" aria-labelledby="features-title">
+        <header className="feature-command-head">
+          <div>
+            <span className="section-index">Capability stack // 06 online</span>
+            <h2 id="features-title">Built to move at typing speed.</h2>
+          </div>
+          <p>One command surface for transforming, finding, saving, and copying styled text—without interrupting your flow.</p>
+        </header>
+
+        <div className="feature-grid">
+          <article className="feature-card feature-live">
+            <div className="feature-card-top"><span>01 / Core engine</span><Zap aria-hidden="true" /></div>
+            <h3>Live conversion</h3>
+            <p>Every visible result updates the moment your input changes. There is no submit step and no waiting screen.</p>
+            <div className="feature-flow"><span>Plain text</span><ArrowRight aria-hidden="true" /><strong>22 outputs</strong></div>
+          </article>
+          <article className="feature-card">
+            <div className="feature-card-top"><span>02 / Library</span><Layers3 aria-hidden="true" /></div>
+            <h3>22 Unicode styles</h3>
+            <p>Small caps, superscript, bold, cursive, bubble, underline, upside down, and more.</p>
+            <div className="feature-specimen">Aa&nbsp; ᴀᴀ&nbsp; ᴬᵃ&nbsp; Ⓐⓐ</div>
+          </article>
+          <article className="feature-card">
+            <div className="feature-card-top"><span>03 / Control</span><Filter aria-hidden="true" /></div>
+            <h3>Search and filter</h3>
+            <p>Cut through the library by name or switch between tiny, classic, decorated, and playful groups.</p>
+            <div className="feature-tags"><span>All</span><span>Tiny</span><span>Classic</span><span>Saved</span></div>
+          </article>
+          <article className="feature-card">
+            <div className="feature-card-top"><span>04 / Recall</span><Heart aria-hidden="true" /></div>
+            <h3>Persistent favorites</h3>
+            <p>Mark the styles you use most. Your saved set stays available in this browser for the next session.</p>
+            <div className="feature-status"><span className="status-dot" /> Local preference saved</div>
+          </article>
+          <article className="feature-card">
+            <div className="feature-card-top"><span>05 / Output</span><Copy aria-hidden="true" /></div>
+            <h3>One-click copy</h3>
+            <p>Every result is a copy target with immediate confirmation, ready to paste into your next app.</p>
+            <div className="feature-copy"><span>ᴍᴀᴋᴇ ɪᴛ ᴄᴏᴜɴᴛ.</span><b><Check size={14} aria-hidden="true" /> Copied</b></div>
+          </article>
+          <article className="feature-card feature-ai">
+            <div className="feature-card-top"><span>06 / Optional AI</span><WandSparkles aria-hidden="true" /></div>
+            <h3>Caption starter</h3>
+            <p>Use the Hugging Face powered prompt when you need a concise starting line before applying a style.</p>
+            <div className="feature-ai-label"><Sparkles size={15} aria-hidden="true" /> Server-side token protection</div>
+          </article>
+        </div>
+
+        <div className="feature-trust" aria-label="Operational guarantees">
+          <span><ShieldCheck aria-hidden="true" /> Local conversion</span>
+          <span><Globe2 aria-hidden="true" /> Cross-platform Unicode</span>
+          <span><Gauge aria-hidden="true" /> No queues or daily limits</span>
+          <span><LockKeyhole aria-hidden="true" /> No account required</span>
+        </div>
       </section>
 
       <section className="tool-directory" aria-labelledby="tools-title">

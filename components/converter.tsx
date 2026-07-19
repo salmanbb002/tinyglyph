@@ -167,15 +167,15 @@ export function Converter({ initialStyle, title, description }: ConverterProps) 
   return (
     <section className="generator tool-workspace" id="generator" aria-label="Unicode converter workspace">
       <div className="workspace-bar">
-        <span><span className="live-dot" /> Generator ready</span>
-        <div><span>22 styles</span><span>Local conversion</span><span>No sign-up</span></div>
+        <span><span className="live-dot" /> Conversion engine / online</span>
+        <div><span>22 outputs</span><span>Local process</span><span>Zero sign-up</span></div>
       </div>
 
       <div className="workspace-grid">
         <aside className="tool-rail" aria-label="Text generator tools">
           <div className="rail-heading">
-            <span>Text tools</span>
-            <small>Choose a focused mode</small>
+            <span>Tool switcher</span>
+            <small>Open a focused engine</small>
           </div>
           <Link className={!initialStyle ? "active" : ""} href="/#generator">
             <span className="rail-glyph">Aa</span>
@@ -196,7 +196,7 @@ export function Converter({ initialStyle, title, description }: ConverterProps) 
         <div className="workspace-canvas">
       <div className="generator-heading">
         <div>
-          <span className="eyebrow"><Sparkles size={15} aria-hidden="true" /> Unicode conversion workspace</span>
+          <span className="eyebrow"><Sparkles size={15} aria-hidden="true" /> Active conversion workspace</span>
           <h2 id="generator-title">{title ?? "Convert your text"}</h2>
         </div>
         <p>{description ?? "Type once, compare every style, then copy the result you want."}</p>
@@ -289,7 +289,7 @@ export function Converter({ initialStyle, title, description }: ConverterProps) 
 
       <div className="results-summary" aria-live="polite">
         <span><b>2</b> Choose an output · {filteredStyles.length} styles</span>
-        <span>Tap any result to copy</span>
+        <span>Click any output to copy</span>
       </div>
 
       {visibleStyles.length > 0 ? (

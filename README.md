@@ -61,4 +61,4 @@ Before deploying, set `NEXT_PUBLIC_SITE_URL` to the canonical domain, set `NEXT_
 
 ## Design direction
 
-TinyGlyph uses a **Precision Utility Desk** direction: a live readiness bar, persistent focused-tool rail, numbered conversion workflow, dense comparison canvas, and explicit local/privacy status. Warm editorial type gives the utility character without pushing the converter below a marketing hero. The direction scored **13/15** on the design feasibility and impact index: high context fit and memorability with low runtime cost.
+TinyGlyph uses an **Obsidian Signal Deck** direction: near-black command surfaces, a cold neutral canvas, signal vermilion, a persistent focused-tool rail, and a numbered conversion workflow. Its visual anchor is the red operational spine connecting the hero, engine status bar, and six-part capability matrix. Newsreader supplies distinctive display tension while Manrope keeps dense controls precise. The direction scored **14/15** on the design feasibility and impact index: high visual impact and context fit with low performance cost.
