@@ -16,6 +16,7 @@ import {
   Zap,
 } from "lucide-react";
 import { Converter } from "@/components/converter";
+import { getSiteUrl } from "@/lib/site-url";
 
 const faq = [
   [
@@ -51,7 +52,7 @@ const focusedTools = [
   ["Upside down", "ʇxǝʇ ʎuᴉ⊥", "upside-down"],
 ] as const;
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://tinyglyph.example";
+const siteUrl = getSiteUrl();
 
 export default function Home() {
   const schema = {
