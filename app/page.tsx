@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -17,6 +18,10 @@ import {
 } from "lucide-react";
 import { Converter } from "@/components/converter";
 import { getSiteUrl } from "@/lib/site-url";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const faq = [
   [

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { InfoPage } from "@/components/info-page";
 
-export const metadata: Metadata = { title: "About", description: "How SmallTextGen turns plain text into copy-ready Unicode styles." };
+export const metadata: Metadata = {
+  title: "About",
+  description: "How SmallTextGen turns plain text into copy-ready Unicode styles.",
+  alternates: { canonical: "/about" },
+};
 
 export default function AboutPage() {
   return (

@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { InfoPage } from "@/components/info-page";
 
-export const metadata: Metadata = { title: "Terms", description: "Terms for using SmallTextGen." };
+export const metadata: Metadata = {
+  title: "Terms",
+  description: "Terms for using SmallTextGen.",
+  alternates: { canonical: "/terms" },
+};
 
 export default function TermsPage() {
   return (

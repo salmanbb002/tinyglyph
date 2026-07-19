@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { InfoPage } from "@/components/info-page";
 
-export const metadata: Metadata = { title: "Contact", description: "Contact the SmallTextGen team." };
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Contact the SmallTextGen team.",
+  alternates: { canonical: "/contact" },
+};
 
 export default function ContactPage() {
   const contactEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL;

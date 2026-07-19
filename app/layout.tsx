@@ -17,7 +17,9 @@ export const metadata: Metadata = {
   description: "Turn ordinary text into small caps, superscript, subscript, cursive, bubble text, and more. Free, instant, and private.",
   applicationName: "SmallTextGen",
   keywords: ["small text generator", "tiny text", "unicode text", "small caps", "superscript generator"],
-  alternates: { canonical: "/" },
+  verification: process.env.GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
+    : undefined,
   openGraph: {
     type: "website",
     siteName: "SmallTextGen",
