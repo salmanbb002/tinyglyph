@@ -85,20 +85,17 @@ export default function Home() {
       <section className="utility-hero">
         <div className="utility-hero-copy">
           <div className="breadcrumbs" aria-label="Breadcrumb">Home <span>/</span> Text tools <span>/</span> Small text generator</div>
-          <span className="eyebrow"><span className="status-dot" /> Text engine / online</span>
-          <h1><span>Small Text</span><span>Generator</span></h1>
+          <span className="eyebrow"><span className="status-dot" /> Free online text tool</span>
+          <h1>Small Text Generator</h1>
           <p>Convert normal text into small caps, superscript, subscript, cursive, bubble letters, and more copy-and-paste Unicode styles.</p>
-          <div className="hero-commandline" aria-label="Conversion workflow">
-            <span>Input</span><ArrowRight aria-hidden="true" /><span>Transform</span><ArrowRight aria-hidden="true" /><strong>Copy</strong>
-          </div>
           <div className="utility-badges">
-            <span><Zap size={15} aria-hidden="true" /> 22 live outputs</span>
-            <span><LockKeyhole size={15} aria-hidden="true" /> Zero text uploads</span>
-            <span><Check size={15} aria-hidden="true" /> Unlimited use</span>
+            <span><Zap size={15} aria-hidden="true" /> Instant results</span>
+            <span><LockKeyhole size={15} aria-hidden="true" /> Private conversion</span>
+            <span><Check size={15} aria-hidden="true" /> No sign-up</span>
           </div>
         </div>
         <div className="tool-profile" aria-label="Tool capabilities">
-          <div className="tool-profile-head"><span>Capability scan</span><b>STG // 01</b></div>
+          <div className="tool-profile-head"><span>Tool overview</span><b>Ready</b></div>
           <div className="profile-metric"><strong>22</strong><span>Unicode styles<br />in one workspace</span></div>
           <div className="profile-grid">
             <span><b>0</b> uploads</span>
@@ -114,45 +111,45 @@ export default function Home() {
       <section className="feature-command" aria-labelledby="features-title">
         <header className="feature-command-head">
           <div>
-            <span className="section-index">Capability stack // 06 online</span>
-            <h2 id="features-title">Built to move at typing speed.</h2>
+            <span className="section-index">Features</span>
+            <h2 id="features-title">Everything useful, kept simple.</h2>
           </div>
           <p>One command surface for transforming, finding, saving, and copying styled text—without interrupting your flow.</p>
         </header>
 
         <div className="feature-grid">
           <article className="feature-card feature-live">
-            <div className="feature-card-top"><span>01 / Core engine</span><Zap aria-hidden="true" /></div>
+            <div className="feature-card-top"><span>Live results</span><Zap aria-hidden="true" /></div>
             <h3>Live conversion</h3>
             <p>Every visible result updates the moment your input changes. There is no submit step and no waiting screen.</p>
             <div className="feature-flow"><span>Plain text</span><ArrowRight aria-hidden="true" /><strong>22 outputs</strong></div>
           </article>
           <article className="feature-card">
-            <div className="feature-card-top"><span>02 / Library</span><Layers3 aria-hidden="true" /></div>
+            <div className="feature-card-top"><span>Style library</span><Layers3 aria-hidden="true" /></div>
             <h3>22 Unicode styles</h3>
             <p>Small caps, superscript, bold, cursive, bubble, underline, upside down, and more.</p>
             <div className="feature-specimen">Aa&nbsp; ᴀᴀ&nbsp; ᴬᵃ&nbsp; Ⓐⓐ</div>
           </article>
           <article className="feature-card">
-            <div className="feature-card-top"><span>03 / Control</span><Filter aria-hidden="true" /></div>
+            <div className="feature-card-top"><span>Find styles</span><Filter aria-hidden="true" /></div>
             <h3>Search and filter</h3>
             <p>Cut through the library by name or switch between tiny, classic, decorated, and playful groups.</p>
             <div className="feature-tags"><span>All</span><span>Tiny</span><span>Classic</span><span>Saved</span></div>
           </article>
           <article className="feature-card">
-            <div className="feature-card-top"><span>04 / Recall</span><Heart aria-hidden="true" /></div>
+            <div className="feature-card-top"><span>Saved styles</span><Heart aria-hidden="true" /></div>
             <h3>Persistent favorites</h3>
             <p>Mark the styles you use most. Your saved set stays available in this browser for the next session.</p>
             <div className="feature-status"><span className="status-dot" /> Local preference saved</div>
           </article>
           <article className="feature-card">
-            <div className="feature-card-top"><span>05 / Output</span><Copy aria-hidden="true" /></div>
+            <div className="feature-card-top"><span>Quick copy</span><Copy aria-hidden="true" /></div>
             <h3>One-click copy</h3>
             <p>Every result is a copy target with immediate confirmation, ready to paste into your next app.</p>
             <div className="feature-copy"><span>ᴍᴀᴋᴇ ɪᴛ ᴄᴏᴜɴᴛ.</span><b><Check size={14} aria-hidden="true" /> Copied</b></div>
           </article>
           <article className="feature-card feature-ai">
-            <div className="feature-card-top"><span>06 / Optional AI</span><WandSparkles aria-hidden="true" /></div>
+            <div className="feature-card-top"><span>Optional AI</span><WandSparkles aria-hidden="true" /></div>
             <h3>Caption starter</h3>
             <p>Use the Hugging Face powered prompt when you need a concise starting line before applying a style.</p>
             <div className="feature-ai-label"><Sparkles size={15} aria-hidden="true" /> Server-side token protection</div>
