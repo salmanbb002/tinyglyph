@@ -7,6 +7,9 @@ import { SiteHeader } from "@/components/site-header";
 import { getSiteUrl } from "@/lib/site-url";
 
 const siteUrl = getSiteUrl();
+const googleSiteVerification =
+  process.env.GOOGLE_SITE_VERIFICATION ??
+  "lNqz9annXh8XpYui9M7TjIoUS9Jcxi39w4l35Nbplyg";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -17,9 +20,7 @@ export const metadata: Metadata = {
   description: "Turn ordinary text into small caps, superscript, subscript, cursive, bubble text, and more. Free, instant, and private.",
   applicationName: "SmallTextGen",
   keywords: ["small text generator", "tiny text", "unicode text", "small caps", "superscript generator"],
-  verification: process.env.GOOGLE_SITE_VERIFICATION
-    ? { google: process.env.GOOGLE_SITE_VERIFICATION }
-    : undefined,
+  verification: { google: googleSiteVerification },
   openGraph: {
     type: "website",
     siteName: "SmallTextGen",
